@@ -3,6 +3,9 @@ normal = "block"
 insert = "bar"
 # select = "underline"
 
+[keys.normal]
+F8 = ":open ~/.config/helix/config.toml"
+
 [keys.insert]
 C-p = "move_line_up"
 C-n = "move_line_down"
