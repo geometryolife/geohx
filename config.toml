@@ -10,6 +10,7 @@ insert = "bar"
 
 [keys.normal]
 F8 = ":open ~/.config/helix/config.toml"
+Z = { Z = ":wq", Q = ":q!" }
 
 [keys.insert]
 C-p = "move_line_up"
