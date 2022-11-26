@@ -1,4 +1,4 @@
-theme = "ayu_dark"
+theme = "autumn"
 
 [editor]
 true-color = true
@@ -11,6 +11,7 @@ insert = "bar"
 [keys.normal]
 F8 = ":open ~/.config/helix/config.toml"
 Z = { Z = ":wq", Q = ":q!" }
+"space" = { w = { i = ":wq" } }
 
 [keys.insert]
 C-p = "move_line_up"
