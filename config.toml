@@ -9,6 +9,9 @@ insert = "bar"
 # select = "underline"
 
 [keys.normal]
+K = ["move_line_up", "move_line_up", "move_line_up", "move_line_up", "move_line_up"]
+J = ["move_line_down", "move_line_down", "move_line_down", "move_line_down", "move_line_down"]
+
 F8 = ":open ~/.config/helix/config.toml"
 Z = { Z = ":wq", Q = ":q!" }
 "space" = { w = { i = ":wq" } }
