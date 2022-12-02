@@ -11,10 +11,17 @@ insert = "bar"
 [keys.normal]
 K = ["move_line_up", "move_line_up", "move_line_up", "move_line_up", "move_line_up"]
 J = ["move_line_down", "move_line_down", "move_line_down", "move_line_down", "move_line_down"]
+Q = ":q"
 
 F8 = ":open ~/.config/helix/config.toml"
 Z = { Z = ":wq", Q = ":q!" }
-"space" = { w = { i = ":wq" } }
+
+[keys.normal.space.q]
+Q = "record_macro"
+
+[keys.normal.space.w]
+i = ":wq"
+u = ":update"
 
 [keys.insert]
 C-p = "move_line_up"
