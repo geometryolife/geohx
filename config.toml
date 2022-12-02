@@ -1,4 +1,4 @@
-theme = "autumn"
+theme = "catppuccin_macchiato"
 
 [editor]
 true-color = true
@@ -7,6 +7,24 @@ true-color = true
 normal = "block"
 insert = "bar"
 # select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+# or control each character
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal]
 K = ["move_line_up", "move_line_up", "move_line_up", "move_line_up", "move_line_up"]
