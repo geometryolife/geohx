@@ -26,21 +26,38 @@ tab = "→"
 newline = "⏎"
 tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
+# ░█▀█░█▀█░█▀▄░█▄█░█▀█░█░░░░░█▄█░█▀█░█▀▄░█▀▀
+# ░█░█░█░█░█▀▄░█░█░█▀█░█░░░░░█░█░█░█░█░█░█▀▀
+# ░▀░▀░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀░░░▀░▀░▀▀▀░▀▀░░▀▀▀
+
 [keys.normal]
 K = ["move_line_up", "move_line_up", "move_line_up", "move_line_up", "move_line_up"]
 J = ["move_line_down", "move_line_down", "move_line_down", "move_line_down", "move_line_down"]
 Q = ":q"
+V = ["select_mode", "extend_to_line_bounds"]
 
 F8 = ":open ~/.config/helix/config.toml"
 Z = { Z = ":wq", Q = ":q!" }
 
+[keys.normal.space]
+";" = "toggle_comments"
+
 [keys.normal.space.q]
-Q = "record_macro"
+r = "record_macro"
 
 [keys.normal.space.w]
 i = ":wq"
 u = ":update"
 a = "select_all"
+
+# Text manipulation
+[keys.normal.space.x]
+"u" = "switch_to_lowercase"
+"U" = "switch_to_uppercase"
+
+# ░▀█▀░█▀█░█▀▀░█▀▀░█▀▄░▀█▀░░░█▄█░█▀█░█▀▄░█▀▀
+# ░░█░░█░█░▀▀█░█▀▀░█▀▄░░█░░░░█░█░█░█░█░█░█▀▀
+# ░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀░▀░░▀░░░░▀░▀░▀▀▀░▀▀░░▀▀▀
 
 [keys.insert]
 C-p = "move_line_up"
@@ -50,3 +67,10 @@ C-f = "move_char_right"
 C-a = "goto_line_start"
 C-e = "goto_line_end_newline"
 # k = { j = "normal_mode" } # Maps `kj` to exit insert mode
+
+# ░█▀▀░█▀▀░█░░░█▀▀░█▀▀░▀█▀░░░█▄█░█▀█░█▀▄░█▀▀
+# ░▀▀█░█▀▀░█░░░█▀▀░█░░░░█░░░░█░█░█░█░█░█░█▀▀
+# ░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░░▀░░░░▀░▀░▀▀▀░▀▀░░▀▀▀
+
+[keys.select.space]
+";" = "toggle_comments"

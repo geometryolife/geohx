@@ -1,2 +1,10 @@
+exclude = ["language.toml"]
 [formatting]
 array_auto_expand = false
+
+[[rule]]
+include = ["config.toml"]
+keys = ["keys.normal.space.w"]
+
+[rule.formatting]
+reorder_keys = true
