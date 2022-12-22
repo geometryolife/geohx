@@ -2,6 +2,10 @@ theme = "catppuccin_macchiato"
 
 [editor]
 true-color = true
+rulers = [80]
+# cursorline = true
+idle-timeout = 100
+bufferline = "always"
 
 [editor.cursor-shape]
 normal = "block"
@@ -35,6 +39,8 @@ K = ["move_line_up", "move_line_up", "move_line_up", "move_line_up", "move_line_
 J = ["move_line_down", "move_line_down", "move_line_down", "move_line_down", "move_line_down"]
 Q = ":q"
 V = ["select_mode", "extend_to_line_bounds"]
+C-p = ["move_line_up", "scroll_up"]
+C-n = ["move_line_down", "scroll_down"]
 
 F8 = ":open ~/.config/helix/config.toml"
 Z = { Z = ":wq", Q = ":q!" }
