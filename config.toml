@@ -58,8 +58,9 @@ a = "select_all"
 
 # Text manipulation
 [keys.normal.space.x]
-"u" = "switch_to_lowercase"
-"U" = "switch_to_uppercase"
+c = "switch_case"
+u = "switch_to_lowercase"
+U = "switch_to_uppercase"
 
 # ░▀█▀░█▀█░█▀▀░█▀▀░█▀▄░▀█▀░░░█▄█░█▀█░█▀▄░█▀▀
 # ░░█░░█░█░▀▀█░█▀▀░█▀▄░░█░░░░█░█░█░█░█░█░█▀▀
