@@ -19,3 +19,7 @@ source = { git = "https://github.com/move-hub/tree-sitter-move", rev = "93527b2c
 [[language]]
 name = "javascript"
 auto-format = true
+
+[[language]]
+name = "typescript"
+auto-format = true
