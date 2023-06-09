@@ -45,7 +45,10 @@ C-n = ["move_line_down", "scroll_down"]
 F8 = ":open ~/.config/helix/config.toml"
 Z = { Z = ":wq", Q = ":q!" }
 
-s = { s = "select_regex", r = "split_selection" }
+[keys.normal.s]
+i = ":wq"
+s = "select_regex"
+r = "split_selection"
 
 [keys.normal.space]
 ";" = "toggle_comments"
