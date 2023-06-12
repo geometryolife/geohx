@@ -52,9 +52,7 @@ r = "split_selection"
 
 [keys.normal.space]
 ";" = "toggle_comments"
-
-[keys.normal.space.q]
-r = "record_macro"
+"q" = ":quit"
 
 [keys.normal.space.w]
 i = ":wq"
